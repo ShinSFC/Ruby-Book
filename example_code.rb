@@ -71,3 +71,10 @@ loop do
   break
 end
 puts x     # 2 -- the value was changed
+
+# Hash class select method
+
+irb :004 > name_and_age.select { |k,v| k == "Bob" }
+=> {"Bob"=>42}
+irb :005 > name_and_age.select { |k,v| (k == "Bob") || (v == 19) }
+=> {"Bob"=>42, "Joe"=>19}
