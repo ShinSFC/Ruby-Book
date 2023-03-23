@@ -1,5 +1,9 @@
 a = ['white snow', 'winter wonderland', 'melting ice', 'slippery sidewalk', 'salted roads', 'white trees']
 
-a.map { |str| str.split }
+a = a.map { |str| str.split }
   
-print a
+a = a.flatten
+
+p a
+
+# my solution did not include a "a =" and had to add a ! the map and flatten
